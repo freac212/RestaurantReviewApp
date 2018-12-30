@@ -41,6 +41,8 @@ self.addEventListener('install', function (event) {
             './img/8.jpg',
             './img/9.jpg',
             './img/10.jpg',
+            './img/logo-512.png',
+            './img/logo-192.png',
             'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
             'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
             'https://unpkg.com/leaflet@1.3.1/dist/images/marker-icon.png',
@@ -56,6 +58,7 @@ self.addEventListener('install', function (event) {
             './restaurant.html?id=8',
             './restaurant.html?id=9',
             './restaurant.html?id=10',
+            './manifest.json'
           ]
         );
       })
