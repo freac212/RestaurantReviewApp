@@ -1,4 +1,4 @@
-const STATIC_CACHE = 'cache-v1';
+const STATIC_CACHE = 'cache-r-v1';
 
 // First check the cached files, if they don't exist, fetch them through the network
 self.addEventListener('fetch', function (event) {
