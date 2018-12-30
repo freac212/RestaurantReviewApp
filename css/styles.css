@@ -292,9 +292,6 @@ nav h1 a {
 /* Tablet / Mobile */
 @media screen and (max-device-width: 800px){
   /* Main Restaurant Page CSS */
-  #map {
-    height: 200px;
-  }
   #restaurants-list li{
     width: 100%;
     border: none;
@@ -341,20 +338,7 @@ nav h1 a {
   #restaurant-img {
     width: 100%;
   }
-  #restaurant-address {
-    font-size: 12pt;
-    margin: 10px 0px;
-  }
   #restaurant-cuisine {
-    background-color: #333;
-    color: #ddd;
-    font-size: 12pt;
-    font-weight: 300;
-    letter-spacing: 10px;
-    margin: 0 0 20px;
-    padding: 2px 0;
-    text-align: center;
-    text-transform: uppercase;
     width: 100%;
   }
   #restaurant-container, #reviews-container {
@@ -381,6 +365,9 @@ nav h1 a {
   }
   .inside #footer{
     width: 100%;
+  }
+  #reviews-list li {
+    margin: 30px auto;
   }
 }
 
@@ -409,9 +396,19 @@ nav h1 a {
     height: 50px;
     text-align: center;
   }
-  
+
   /* Restaurant Details Page CSS */
   #restaurant-container, #reviews-container {
     padding: 10px 40px;
+  }
+  #map-image-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .inside #restaurant-img, .inside #map{
+    flex: 0 1 auto;
+  }
+  .inside #map-container{
+    height: inherit;
   }
 }
