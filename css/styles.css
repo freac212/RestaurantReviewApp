@@ -289,12 +289,7 @@ nav h1 a {
 }
 
 /* MEDIA QUERIES */
-/* important class names */
-/*
-- #restaurants-list li
-- #restaurant-img
- */
-/* PHONE  < 450px  */
+/* Tablet / Mobile */
 @media screen and (max-device-width: 800px){
   /* Main Restaurant Page CSS */
   #map {
@@ -341,6 +336,7 @@ nav h1 a {
     padding: unset;
     padding-top: 10px;
   }
+
   /* Restaurant Details Page CSS */
   #restaurant-img {
     width: 100%;
@@ -364,12 +360,10 @@ nav h1 a {
   #restaurant-container, #reviews-container {
     border-bottom: 1px solid #d9d9d9;
     border-top: unset;
-    /* padding: unset; */
     padding: 10px;
     width: unset;
   }
   .inside #map-container {
-    /* background: blue none repeat scroll 0 0; */
     height: 200px;
     width: 100%;
     position: relative;
@@ -390,7 +384,7 @@ nav h1 a {
   }
 }
 
-/* Tablet < 800px */
+/* Tablet Specific */
 @media screen and (min-device-width: 650px) and (max-device-width: 800px) {
   /* Main Restaurant Page CSS */
   #restaurants-list {
@@ -415,19 +409,9 @@ nav h1 a {
     height: 50px;
     text-align: center;
   }
+  
   /* Restaurant Details Page CSS */
   #restaurant-container, #reviews-container {
     padding: 10px 40px;
   }
 }
-
-
-/* May not need this as it's already done.. Above this all.
-@media screen and (min-device-width: 800px) and (max-device-width: 1100px) {
-
-}
- High Res Computer > 1100 
-@media screen and (min-device-width: 1101px) {
-
-} 
-*/
