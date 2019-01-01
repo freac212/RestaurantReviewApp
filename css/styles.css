@@ -2,7 +2,7 @@
 /* CSS Document */
 
 
-/* Computer < 1100*/
+/* Computer > 800/900*/
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
@@ -289,9 +289,89 @@ nav h1 a {
 }
 
 /* MEDIA QUERIES */
-/* Tablet / Mobile */
+/* Tablet / Mobile: Restaurant Details Page CSS */
 @media screen and (max-device-width: 800px){
+
+  #restaurant-img {
+    width: 100%;
+  }
+  #restaurant-cuisine {
+    width: 100%;
+  }
+  #restaurant-container, #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: unset;
+    padding: 10px;
+    width: unset;
+  }
+  .inside #map-container {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    right: unset;
+    top: unset;
+  }
+  #breadcrumb{
+    width: unset;
+  }
+  .inside #map {
+    background-color: #ccc;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .inside #footer{
+    width: 100%;
+  }
+  #reviews-list li {
+    margin: 30px auto;
+  }
+}
+
+/* Tablet Specific */
+@media screen and (min-device-width: 650px) and (max-device-width: 900px) {
   /* Main Restaurant Page CSS */
+  #restaurants-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+  }
+  #restaurants-list li{
+    border: none;
+    background-color: unset;
+    padding: unset;
+
+    padding-bottom: 20px;
+    border-bottom: grey solid 2px;
+    margin-bottom: 10px;
+  }
+  .filter-options select{
+    width: 44%;
+    font-size: 1em;
+    height: 50px;
+    text-align: center;
+  }
+
+  /* Restaurant Details Page CSS */
+  #restaurant-container, #reviews-container {
+    padding: 10px 40px;
+  }
+  #map-image-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .inside #restaurant-img, .inside #map{
+    flex: 0 1 auto;
+  }
+  .inside #map-container{
+    height: inherit;
+  }
+}
+
+/* Mobile: Main Restaurant Page CSS  */
+@media screen and (min-device-width: 400px) and (max-device-width: 649px) {
   #restaurants-list li{
     width: 100%;
     border: none;
@@ -332,83 +412,5 @@ nav h1 a {
     font-size: 1em;
     padding: unset;
     padding-top: 10px;
-  }
-
-  /* Restaurant Details Page CSS */
-  #restaurant-img {
-    width: 100%;
-  }
-  #restaurant-cuisine {
-    width: 100%;
-  }
-  #restaurant-container, #reviews-container {
-    border-bottom: 1px solid #d9d9d9;
-    border-top: unset;
-    padding: 10px;
-    width: unset;
-  }
-  .inside #map-container {
-    height: 200px;
-    width: 100%;
-    position: relative;
-    right: unset;
-    top: unset;
-  }
-  #breadcrumb{
-    width: unset;
-  }
-  .inside #map {
-    background-color: #ccc;
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
-  .inside #footer{
-    width: 100%;
-  }
-  #reviews-list li {
-    margin: 30px auto;
-  }
-}
-
-/* Tablet Specific */
-@media screen and (min-device-width: 650px) and (max-device-width: 800px) {
-  /* Main Restaurant Page CSS */
-  #restaurants-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    justify-content: space-evenly;
-  }
-  #restaurants-list li{
-    border: none;
-    background-color: unset;
-    padding: unset;
-
-    padding-bottom: 20px;
-    border-bottom: grey solid 2px;
-    margin-bottom: 10px;
-  }
-  .filter-options select{
-    width: 44%;
-    font-size: 1em;
-    height: 50px;
-    text-align: center;
-  }
-
-  /* Restaurant Details Page CSS */
-  #restaurant-container, #reviews-container {
-    padding: 10px 40px;
-  }
-  #map-image-container{
-    display: flex;
-    flex-direction: row;
-  }
-  .inside #restaurant-img, .inside #map{
-    flex: 0 1 auto;
-  }
-  .inside #map-container{
-    height: inherit;
   }
 }
