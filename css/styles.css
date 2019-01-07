@@ -167,8 +167,6 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
 }
 #restaurants-list li h1 {
   color: #f18200;
@@ -290,7 +288,7 @@ nav h1 a {
 
 /* MEDIA QUERIES */
 /* Tablet / Mobile: Restaurant Details Page CSS */
-@media screen and (max-device-width: 800px){
+@media screen and (max-device-width: 900px){
 
   #restaurant-img {
     width: 100%;
@@ -371,7 +369,7 @@ nav h1 a {
 }
 
 /* Mobile: Main Restaurant Page CSS  */
-@media screen and (min-device-width: 320px) and (max-device-width: 649px) {
+@media screen and (min-device-width: 0) and (max-device-width: 649px) {
   #restaurants-list li{
     width: 100%;
     border: none;
