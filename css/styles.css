@@ -289,7 +289,7 @@ nav h1 a {
 
 /* MEDIA QUERIES */
 /* Tablet / Mobile: Restaurant Details Page CSS */
-@media screen and (max-device-width: 900px){
+@media screen and (max-width: 900px){
 
   #restaurant-img {
     width: 100%;
@@ -334,7 +334,7 @@ nav h1 a {
 }
 
 /* Tablet Specific */
-@media screen and (min-device-width: 650px) and (max-device-width: 900px) {
+@media screen and (min-width: 650px) and (max-width: 900px) {
   /* Main Restaurant Page CSS */
   #restaurants-list {
     display: flex;
@@ -375,7 +375,7 @@ nav h1 a {
 }
 
 /* Mobile: */
-@media screen and (min-device-width: 0) and (max-device-width: 649px) {
+@media screen and (min-width: 0) and (max-width: 649px) {
   #restaurants-list li{
     width: 100%;
     border: none;
